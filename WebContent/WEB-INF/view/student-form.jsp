@@ -18,7 +18,12 @@
 		</form:select>
 		<br>
 		<br>
-			
+		Programming Language
+		Java <form:radiobutton path="favoriteLanguage" value="Java"/>
+		C# <form:radiobutton path="favoriteLanguage" value="C#"/>
+		
+		<br>
+		<br>
 		<input type="submit" value="Submit" />
 	</form:form>
 </body>
