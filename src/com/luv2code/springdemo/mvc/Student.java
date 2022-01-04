@@ -2,6 +2,7 @@ package com.luv2code.springdemo.mvc;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 
 public class Student {
 	
@@ -9,6 +10,7 @@ public class Student {
 	private String lastName;
 	private String country;
 	private String favoriteLanguage;
+	private List<String> operationSystems;
 	
 	private HashMap<String, String> countryOptions;
 	
@@ -56,6 +58,12 @@ public class Student {
 		this.favoriteLanguage = favoriteLanguage;
 	}
 
-	
+	public List<String> getOperationSystems() {
+		return operationSystems;
+	}
+
+	public void setOperationSystems(List<String> operationSystems) {
+		this.operationSystems = operationSystems;
+	}
 
 }

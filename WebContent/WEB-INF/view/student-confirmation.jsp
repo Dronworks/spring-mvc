@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <!-- For loops -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,13 @@
 	Country: ${student.country}
 	<br><br>
 	Programming: ${student.favoriteLanguage}
+	<br><br>
+	Selected OS: 
+	<ul>
+		<c:forEach var="os" items="${student.operationSystems }">
+			<li> ${os} </li>	
+		</c:forEach>
+	</ul>
 	
 </body>
 </html>

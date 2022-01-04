@@ -18,12 +18,16 @@
 		</form:select>
 		<br>
 		<br>
-		Programming Language
+		Programming Language:
 		Java <form:radiobutton path="favoriteLanguage" value="Java"/>
 		C# <form:radiobutton path="favoriteLanguage" value="C#"/>
 		
 		<br>
 		<br>
+		OS:
+		Linux <form:checkbox path="operationSystems" value="Linux"/>
+		Windows <form:checkbox path="operationSystems" value="Windows"/>
+		Mac OS <form:checkbox path="operationSystems" value="Mac OS"/>
 		<input type="submit" value="Submit" />
 	</form:form>
 </body>
